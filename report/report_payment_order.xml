@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<openerp>
+<data noupdate="0">
+
+    <record id="account_payment_group_report_payment_order_id" model="ir.actions.report">
+        <field name="name">Orden de Pago</field>
+        <field name="type">ir.actions.report</field>
+        <field name="model">account.payment.group</field>
+        <field name="report_name">payment_order_report</field>
+        <field name="report_type">aeroo</field>
+        <field name="in_format">oo-odt</field>
+        <field name="parser_state">default</field>
+        <field name="binding_model_id" ref="base.model_res_partner"/>
+        <field name="parser_state">loc</field>
+        <field name="parser_loc">account_payment_group_order_report/report/parser.py</field>
+        <field name="report_file">account_payment_group_order_report/report/payment_order_template.odt</field>
+        <field name="tml_source">file</field>
+    </record>
+
+</data>
+</openerp>
